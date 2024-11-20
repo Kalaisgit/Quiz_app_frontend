@@ -109,8 +109,9 @@ const ViewAllQuestions = () => {
   }
 
   return (
-    <div className="question-container">
+    <div>
       <button onClick={goBack}>Back</button>
+    <div className="question-container">
       {questions.length > 0 ? (
         <ul>
           {questions.map((question, index) => (
@@ -214,6 +215,7 @@ const ViewAllQuestions = () => {
         <p>No questions available.</p>
       )}
     </div>
+      </div>
   );
 };
 
